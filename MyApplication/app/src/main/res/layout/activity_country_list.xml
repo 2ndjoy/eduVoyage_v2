@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5B68D">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore Universities by Country"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp" />
+
+        <!-- Cards Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <!-- Card Template -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="6dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:contentDescription="Country Image"
+                    android:src="@drawable/country_image_one"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="United States"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/btnSeeDetailsOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See Details"
+                    android:textColor="#000000"
+                    android:backgroundTint="#FFC107"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+
+            <!-- Card 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="6dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:contentDescription="Country Image"
+                    android:src="@drawable/country_image_two"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="United Kingdom"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/btnSeeDetailsTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See Details"
+                    android:textColor="#000000"
+                    android:backgroundTint="#FFC107"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+
+            <!-- Additional Cards -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="6dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:contentDescription="Country Image"
+                    android:src="@drawable/country_image_three"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Canada"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/btnSeeDetailsThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See Details"
+                    android:textColor="#000000"
+                    android:backgroundTint="#FFC107"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="6dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:contentDescription="Country Image"
+                    android:src="@drawable/country_image_four"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Australia"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/btnSeeDetailsFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See Details"
+                    android:textColor="#000000"
+                    android:backgroundTint="#FFC107"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

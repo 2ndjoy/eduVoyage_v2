@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5B68D"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#A5B68D">
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find your dream degree"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/searchInput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Search country / university / courses..."
+                android:inputType="text"
+                android:padding="10dp"
+                android:background="@drawable/search_input_background"
+                android:layout_marginTop="10dp"
+                android:elevation="2dp"/>
+        </LinearLayout>
+
+
+        <!-- Top Universities Section -->
+        <LinearLayout
+            android:id="@+id/topUniversitiesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Universities around the world"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- University Cards -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- University Card 1 -->
+                <LinearLayout
+                    android:id="@+id/universityCardOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_background"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/img1"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="University image"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Explore Universities"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:paddingTop="8dp"/>
+                </LinearLayout>
+
+                <!-- University Card 2 -->
+                <LinearLayout
+                    android:id="@+id/universityCardTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_background"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/img2"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Another university image"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Explore Universities"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:paddingTop="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- See More Button -->
+        <Button
+            android:id="@+id/btnSeeMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/darkerishGreen"
+            android:text="See More"
+            android:textAllCaps="false"/>
+
+        <!-- Popular Universities Section -->
+        <LinearLayout
+            android:id="@+id/popularUniversitiesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#A5B68D">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Popular Universities"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Horizontal Scrollable Section -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- University Card 1 -->
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:background="@drawable/card_background"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:src="@drawable/torontoimg"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="University of Toronto"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:textColor="#000"/>
+                    </LinearLayout>
+
+                    <!-- University Card 2 -->
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:background="@drawable/card_background"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:src="@drawable/mcgillimg"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="McGill University"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <!-- University Card 3 -->
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:background="@drawable/card_background"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:src="@drawable/dtuimg"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Technical University of Denmark (DTU)"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:textColor="#000" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!-- About Section -->
+        <LinearLayout
+            android:id="@+id/aboutSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/sectionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About EduVoyage"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EduVoyage is your easy guide to finding the perfect study destination abroad."
+                android:textSize="16sp"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <!-- Problem & Solution Sections remain the same as before -->
+        <!-- You can reuse the existing sections by adjusting the content and texts for your fragment -->
+    </LinearLayout>
+</ScrollView>

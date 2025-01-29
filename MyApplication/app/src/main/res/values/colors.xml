@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whitishGreen">#D3F1DF</color>
+    <color name="darkisGreen">#85A98F</color>
+    <color name="darkerishGreen">#5A6C57</color>
+    <color name="totalyDarkGreen">#525B44</color>
+    <color name="totalyDGreen">#9EDF9C</color>
+
+    <color name="background_color">#5A6C57</color>
+    <color name="button_green">#7ED4AD</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="teal_200">#7ED4AD</color>
+
+
+    <color name="dark_green">#004d00</color>
+    <color name="deep_green">#1F4529</color>
+
+
+</resources>
